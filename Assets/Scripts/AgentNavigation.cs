@@ -15,12 +15,6 @@ public class AgentNavigation : MonoBehaviour
         InvokeRepeating("RecalculerRoute", 1f, 2f);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void RecalculerRoute()
     {
         agent.SetDestination(objetCible.transform.position);
